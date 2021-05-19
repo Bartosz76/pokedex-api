@@ -2,9 +2,11 @@ package bm.app.pokedexapi.mapper;
 
 import bm.app.pokedexapi.dto.PokemonDto;
 import bm.app.pokedexapi.models.Pokemon;
+import org.springframework.stereotype.Component;
 
 import java.util.UUID;
 
+@Component
 public class PokemonMapperImpl implements PokemonMapper{
 
     @Override
