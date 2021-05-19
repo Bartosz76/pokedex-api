@@ -2,6 +2,8 @@ package bm.app.pokedexapi.dto;
 
 import lombok.*;
 
+import java.util.Date;
+
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
@@ -13,5 +15,6 @@ public class PokemonDto {
     private String name;
     private String type;
     private String pokedexEntry;
+    private Date createdAt;
 
 }
