@@ -1,5 +1,6 @@
 package bm.app.pokedexapi.dto;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.*;
 
 import java.util.Date;
@@ -11,10 +12,14 @@ import java.util.Date;
 @Builder
 public class PokemonDto {
 
+    @JsonProperty("id")
     private int number;
+    @JsonProperty("name")
     private String name;
-    private String type;
-    private String pokedexEntry;
+    @JsonProperty("height")
+    private int height;
+    @JsonProperty("weight")
+    private int weight;
     private Date createdAt;
 
 }

@@ -14,8 +14,8 @@ public class PokemonMapperImpl implements PokemonMapper{
         return Pokemon.builder()
                 .number(pokemonDto.getNumber())
                 .name(pokemonDto.getName())
-                .type(pokemonDto.getType())
-                .pokedexEntry(pokemonDto.getPokedexEntry())
+                .height(pokemonDto.getHeight())
+                .weight(pokemonDto.getWeight())
                 .build();
     }
 
@@ -24,8 +24,8 @@ public class PokemonMapperImpl implements PokemonMapper{
         return PokemonDto.builder()
                 .number(pokemon.getNumber())
                 .name(pokemon.getName())
-                .type(pokemon.getType())
-                .pokedexEntry(pokemon.getPokedexEntry())
+                .height(pokemon.getHeight())
+                .weight(pokemon.getWeight())
                 .build();
     }
 }

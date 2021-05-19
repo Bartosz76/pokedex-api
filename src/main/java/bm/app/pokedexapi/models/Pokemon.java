@@ -23,7 +23,7 @@ public class Pokemon {
     private UUID id;
     private int number;
     private String name;
-    private String type;
-    private String pokedexEntry;
+    private int height;
+    private int weight;
     private Date createdAt;
 }

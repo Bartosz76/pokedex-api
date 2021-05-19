@@ -9,5 +9,6 @@ import java.util.UUID;
 @Repository
 public interface PokemonRepository extends JpaRepository<Pokemon, UUID> {
 
+    Pokemon findByName(String name);
     Pokemon findByNumber(int id);
 }
