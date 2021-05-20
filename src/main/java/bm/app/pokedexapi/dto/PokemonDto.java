@@ -20,6 +20,7 @@ public class PokemonDto {
     private int height;
     @JsonProperty("weight")
     private int weight;
+    @JsonProperty("createdAt")
     private Date createdAt;
 
 }

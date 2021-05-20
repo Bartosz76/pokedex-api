@@ -16,6 +16,7 @@ public class PokemonMapperImpl implements PokemonMapper{
                 .name(pokemonDto.getName())
                 .height(pokemonDto.getHeight())
                 .weight(pokemonDto.getWeight())
+                .createdAt(pokemonDto.getCreatedAt())
                 .build();
     }
 
@@ -26,6 +27,7 @@ public class PokemonMapperImpl implements PokemonMapper{
                 .name(pokemon.getName())
                 .height(pokemon.getHeight())
                 .weight(pokemon.getWeight())
+                .createdAt(pokemon.getCreatedAt())
                 .build();
     }
 }
